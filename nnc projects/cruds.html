@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="cruds.css">
+</head>
+<body>
+    <h1>CRUD Application</h1>
+    <form id="userForm">
+        <input type="text" id="username" placeholder="Enter username" required>
+        <button type="submit">Add User</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User rows will be added here dynamically -->
+        </tbody>
+    </table>
+    <script src="cruds.js"></script>
+</body>
+</html>

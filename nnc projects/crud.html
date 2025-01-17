@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        #userForm {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD Application</h1>
+    <form id="userForm">
+        <input type="text" id="username" placeholder="Enter username" required>
+        <button type="submit">Add User</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User rows will be added here dynamically -->
+        </tbody>
+    </table>
+    <script src="crud.js"></script>
+</body>
+</html>
